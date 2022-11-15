@@ -4,8 +4,8 @@ def countAllCharacters(stringOfWords):
        return {}
     i = 0
     for x in stringOfWords:
-        if stringcount[stringOfWords[i]] == KeyError:
-            stringcount[f"{stringOfWords[i]}"] = 1
+        if stringOfWords[i] in stringcount:
+            stringcount[stringOfWords[i]] = stringcount[stringOfWords[i]] + 1
             i = i +1
         else:
             stringcount[f"{stringOfWords[i]}"] = 1
@@ -16,4 +16,4 @@ result1 = countAllCharacters('banana')
 print('should log "{b: 1, a: 3, n: 2}":', "my result:", result1)
 
 result2 = countAllCharacters('')
-print('should log "{}":', "my result:", result2);
+print('should log "{}":', "my result:", result2)
