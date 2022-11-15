@@ -15,14 +15,12 @@ function countAllCharacters(stringOfWords) {
     else {
       stringcount[words[x]]++;
     }
-    console.log("result", stringcount)
-
   }
   return stringcount;
 }
 
 var result1 = countAllCharacters('banana');
-console.log('should log "{b: 1, a: 3, n: 2}":', result1);
+console.log('should log "{b: 1, a: 3, n: 2}":', "my result:", result1);
 
 var result2 = countAllCharacters('');
-console.log('should log "{}":', result2);
+console.log('should log "{}":', "my result:", result2);
